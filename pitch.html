@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#pitch1").click(function(){
+    $("#modal").fadeOut("slow");
+  });
+});
+</script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="pi.css">
+<div class="box">
+<!-- 原始图片 -->
+<h2>图片墙</h2>
+<ul>
+<li><img id="mypitch" alt="德玛西亚" src="test.jpg" width="300" height="300"></li>
+<li><img id="mypitch1" alt="天降正义" src="a.png" width="300" height="300"></li>
+<li><img id="mypitch2" alt="鲜花" src="http://img3.imgtn.bdimg.com/it/u=1996499788,3346940487&fm=26&gp=0.jpg" width="300" height="300"></li>
+<li><img id="mypitch3" alt="海豚" src="http://img5.imgtn.bdimg.com/it/u=1979198230,3799788659&fm=26&gp=0.jpg" width="300" height="300"></li>
+</ul>
+
+<!-- 弹窗 -->
+	<div id="modal">
+	<!-- 弹窗图片 -->
+		<img id="pitch1">
+    
+    <!-- 弹窗文本 -->
+		<span id="text"></span>
+	</div>
+</div>
+
+<script src="pp.js"></script>
+</body>
+</html>
